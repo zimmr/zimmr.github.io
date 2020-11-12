@@ -7,17 +7,32 @@
 		<style type="text/css" media="screen">
 			body {
 				background-color: #fafafa;	
+				color: #202020;
 				font-family: Helvetica, sans-serif;
 			}
 
-			#structure {
-				border: solid black 1px;	
-				margin: 10px 200px;
+			.structure {
+				margin: 10px 30%;
 			}
 
-			nav {
-				border: solid black 1px;
-		/*		height: 30px; */
+			#blog-title {
+				text-align: center;	
+				margin: auto;
+				height: 80px;
+			}
+
+			.nav, #posts {
+				margin: auto;
+			}
+			
+			.nav td {
+				margin: 6px 10px;
+				padding: 6px 20px;
+			}
+
+			.nav td:hover {
+				background-color: #202020;
+				color: #fafafa;
 			}
 
 			ul {
@@ -26,43 +41,75 @@
 			}
 
 			#posts {
-				border: solid black 1px;
-				margin: 10px 200px;
+				margin: 10px 10%;
+			}
+			
+			#posts tr {
+			}
+
+			#posts tr:hover {
+				background-color: #202020;
+				color: #fafafa;
+
+			}
+			
+			#posts th {
+				width: 90%;	
+				text-align: left;
+				border-bottom-style: solid;
+				border-width: 1px;
+			}
+
+			#posts td {
+				position: relative;
+				float: right;
+				border-bottom-style: solid;
+				border-width: 1px;
 			}
 
 			footer {
-				border: solid black 1px;
+				margin: auto;
+				text-align: center;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="structure">
 			
-			<h1>Teste</h1>
+			<h1 id="blog-title">Teste</h1>
+			<table class="nav">
+				<tr>
+					<td>Index</td>
+					<td>Sobre</td>
+					<td>Histórico</td>
+					<td>RSS</td>
+				</tr>
+			</table>
 
-			<nav>
-				<ul>
-					<li>Index</li>
-					<li>Sobre</li>
-					<li>RSS</li>
-				</ul>
-			</nav>
-		
 			<div id="posts">
 				<table>
 					<tr>
-						<td>Título</td>
+						<th>Título</th>
 						<td>12/11/2020</td>
 					</tr>
 					<tr>
-						<td>Outro título</td>
+						<th>Outro título</th>
 						<td>11/11/2020</td>
 					</tr>
+					<tr>
+						<th>Mais um título</th>
+						<td>10/11/2020</td>
+					</tr>
+					<tr>
+						<th>Ainda outro</th>
+						<td>09/11/2020</td>
+					</tr>
+
 				</table>
 			</div>
 
 			<footer>
-				<h6>Por J. Zimmer. 2020.</h6>
+				<h6>João Zimmer. 2020.</h6>
 			</footer>
 
 		</div>

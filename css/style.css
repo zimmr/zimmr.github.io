@@ -1,0 +1,62 @@
+body {
+	background-color: #fafafa;	
+	color: #202020;
+	font-family: Helvetica, sans-serif;
+}
+
+.structure {
+	margin: 10px 30%;
+}
+
+#blog-title {
+	text-align: center;	
+	height: 80px;
+}
+
+.nav, #posts, #blog-title {
+	margin: auto;
+}
+			
+.nav td {
+	margin: 6px 10px;
+	padding: 6px 20px;
+}
+
+.nav td:hover {
+	background-color: #202020;
+	color: #fafafa;
+}
+
+ul {
+	list-style: none;
+	display: inline;
+}
+
+#posts {
+	margin: 10px 10%;
+}
+			
+#posts tr { }
+
+#posts tr:hover {
+	background-color: #202020;
+	color: #fafafa;
+}
+			
+#posts th {
+	width: 90%;	
+	text-align: left;
+	border-bottom-style: solid;
+	border-width: 1px;
+}
+
+#posts td {
+	position: relative;
+	float: right;
+	border-bottom-style: solid;
+	border-width: 1px;
+}
+
+footer {
+	text-align: center;
+}

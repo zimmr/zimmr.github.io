@@ -4,46 +4,53 @@ body {
 	font-family: Helvetica, sans-serif;
 }
 
-.structure {
-	margin: 10px 30%;
+.container {
+	max-width: 30%;
+	margin: auto;
 }
 
-#blog-title {
+@media screen and (max-width: 480px) {
+	.container {
+		max-width: 100%;	
+	}
+}
+
+header {
 	height: 50px;
 	text-align: center;
+	border: dotted 1px #202020;
 }
 
 #posts, #blog-title {
 	margin: auto;
 }
 
-#posts, #blog-title, .nav, footer{
+#posts, footer{
+	border: dotted 1px #fafafa;
+}
+
+nav {
 	border: dotted 1px #202020;
 }
 
-.nav {
-	margin: 2% 32%;
-
-}
-
-.nav ul {
+nav ul {
 	list-style: none;
+	width: 50%;
 	margin: auto;
 }
 			
-.nav li {
-	margin: 0px 10px;
-	float: left;
+nav li {
 	text-align: center;
+	display: inline-block;
+	margin: 2px 4px;
 }
 
-.nav li:hover {
+nav li:hover {
 	background-color: #202020;
 	color: #fafafa;
 }
 
 #posts table {
-	margin: 4% 15%;
 }
 			
 #posts tr { }
@@ -56,13 +63,9 @@ body {
 #posts th {
 	width: 90%;	
 	text-align: left;
-	border-bottom-style: solid;
-	border-width: 1px;
 }
 
-#posts td {
-	position: relative;
-	float: right;
+#posts th, td {
 	border-bottom-style: solid;
 	border-width: 1px;
 }
